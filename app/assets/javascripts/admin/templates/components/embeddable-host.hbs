@@ -1,0 +1,18 @@
+{{#if editing}}
+  <td>
+    {{input value=buffered.host}}
+  </td>
+  <td>
+    {{category-chooser value=categoryId}}
+  </td>
+  <td>
+    {{d-button icon="check" action="save" class="btn-primary" disabled=host.isSaving}}
+    {{d-button icon="times" action="cancel" class="btn-danger" disabled=host.isSaving}}
+  </td>
+{{else}}
+  <td>{{host.host}}</td>
+  <td>{{category-badge host.category}}</td>
+  <td>
+    {{d-button icon="pencil" action="edit"}}
+  </td>
+{{/if}}

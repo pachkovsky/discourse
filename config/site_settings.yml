@@ -759,9 +759,6 @@ developer:
     default: false
 
 embedding:
-  embeddable_hosts:
-    default: ''
-    type: host_list
   feed_polling_enabled: false
   feed_polling_url: ''
   embed_by_username:
