@@ -74,7 +74,7 @@ class Post < ActiveRecord::Base
   end
 
   def self.types
-    @types ||= Enum.new(:regular, :moderator_action, :small_action)
+    @types ||= Enum.new(:regular, :moderator_action, :small_action, :whisper)
   end
 
   def self.cook_methods

@@ -1349,6 +1349,7 @@ en:
         yes_value: "Yes, abandon"
 
       via_email: "this post arrived via email"
+      whisper: "this post is a private whisper for moderators"
 
       wiki:
         about: "this post is a wiki; basic users can edit it"
