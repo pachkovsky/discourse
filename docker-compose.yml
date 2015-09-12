@@ -1,0 +1,12 @@
+discourse:
+  # build: ./
+  image: discourse
+  environment:
+    DISCOURSE_DB_HOST: "172.17.0.5"
+    DISCOURSE_DB_USERNAME: postgres
+    DISCOURSE_REDIS_HOST: "172.17.0.4"
+    RAILS_ENV: production
+    PATH: /usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+  ports:
+    - "8081:80"
+  command: /usr/sbin/nginx
